@@ -7,7 +7,7 @@ import configureStore from "./store/configureStore";
 import App from "./App";
 
 // Create browser history to use in the Redux store
-const baseUrl = '';
+const baseUrl = '/';
 const history = createBrowserHistory({ basename: baseUrl });
 
 // Get the application-wide store instance, prepopulating with state from the server where available.
