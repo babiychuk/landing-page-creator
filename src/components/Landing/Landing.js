@@ -82,7 +82,7 @@ class Landing extends React.Component {
                         aria-label="Split button">
                         <Button 
                             
-                            component={Link} to={ `landing-page-creator/landingeditor/new`}>
+                            component={Link} to={ `/landingeditor/new`}>
                             <Add /> Создать новый лендинг
                         </Button>                        
                     </ButtonGroup>
@@ -90,7 +90,7 @@ class Landing extends React.Component {
                     <Paper className={classes.m020}>                       
                         <div className={classes.noLandings}>
                             У Вас пока еще нет готовых лендингов
-                            <Button component={Link} to={ `landing-page-creator/landingeditor/new`}>
+                            <Button component={Link} to={ `/landingeditor/new`}>
                                 <Add /> добавить лендинг
                             </Button> 
                                                    
@@ -118,7 +118,7 @@ class Landing extends React.Component {
                                         <TableCell align="right">{row.Comment <= '' ? "отсутствует" : row.Comment }</TableCell>
                                         <TableCell align="right">{row.Published ? 'Опубликовано':'Не опубликовано' }</TableCell>
                                         <TableCell align="right">{row.Verified ? 'Проверено':'Ждет проверки'}</TableCell>
-                                        <TableCell align="right"><IconButton onClick={()=>this.props.selectLandingF(row, num)} component={Link} to={ `landing-page-creator/${this.props.landingtype}/${row.Name}`}><EditIcon /></IconButton></TableCell>
+                                        <TableCell align="right"><IconButton onClick={()=>this.props.selectLandingF(row, num)} component={Link} to={ `/${this.props.landingtype}/${row.Name}`}><EditIcon /></IconButton></TableCell>
                                         <TableCell align="right"><IconButton onClick={()=>this.props.openModalToDeleteLandingF(true, num, row.Name)}><DeleteIcon/></IconButton></TableCell>
                                     </TableRow>
                                 ))}

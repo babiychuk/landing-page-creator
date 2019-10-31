@@ -93,7 +93,7 @@ class LandingEditor extends React.Component {
             <div className={classes.tittlePage}>Создания нового лендинга</div> <hr/>             
                 <Toolbar variant="dense">                    
                     <Button className={classes.margin0_5} variant="outlined" color="primary" aria-label="GO TO" component={Link}                    
-                        to={`landing-page-creator/landings`}
+                        to={`/landings`}
                     >
                         <ArrowBack /> 
                         Назад

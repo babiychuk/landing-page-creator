@@ -125,7 +125,7 @@ class LandingPage extends React.Component {
             <div className={classes.tittlePage}>Лендинг - {this.state.nameLanding}</div> <hr/>                                     
               <Toolbar variant="dense">                    
                 <Button className={classes.margin0_5} variant="outlined" color="primary" aria-label="GO TO" 
-                  component={Link} to={ `landing-page-creator/landings`} >                        
+                  component={Link} to={ `/landings`} >                        
                   <ArrowBack /> Назад
                 </Button>                 
                 <Button variant="outlined" color="primary"
