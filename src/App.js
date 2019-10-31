@@ -9,10 +9,10 @@ class App extends Component {
   render () {  
     return (          
       <Switch>        
-        <Route exact path='/' component={Landing} />       
-        <Route exact path='/landings' component={Landing} />
-        <Route exact path='/landingpage/:id' component={LandingPage} />
-        <Route exact path='/landingeditor/:id' component={LandingEditor} />      
+        <Route exact path='landing-page-creator/' component={Landing} />       
+        <Route exact path='landing-page-creator/landings' component={Landing} />
+        <Route exact path='landing-page-creator/landingpage/:id' component={LandingPage} />
+        <Route exact path='landing-page-creator/landingeditor/:id' component={LandingEditor} />      
       </Switch>     
     );
   }
