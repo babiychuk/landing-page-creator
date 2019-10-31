@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import NotFound from "./components/NotFound";
+import Landing from "./components/Landing/Landing";
+import LandingPage from "./components/LandingPage/LandingPage";
+import LandingEditor from "./components/LandingEditor/LandingEditor";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  render () {  
+    return (          
+      <Switch>        
+        <Route exact path='/' component={Landing} />       
+        <Route exact path='/landings' component={Landing} />
+        <Route exact path='/landingpage/:id' component={LandingPage} />
+        <Route exact path='/landingeditor/:id' component={LandingEditor} /> 
+        <Route exact path="/notfound" component={NotFound} status={404} />
+        <Route path="*" component={NotFound} status={404} />
+        <Redirect to="/" />        
+      </Switch>     
+    );
+  }
 }
 
-export default App;
+export default (App);
