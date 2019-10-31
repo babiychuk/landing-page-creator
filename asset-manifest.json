@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/landing-page-creator/static/js/main.fb6fed8a.chunk.js",
-    "main.js.map": "/landing-page-creator/static/js/main.fb6fed8a.chunk.js.map",
+    "main.js": "/landing-page-creator/static/js/main.03d24535.chunk.js",
+    "main.js.map": "/landing-page-creator/static/js/main.03d24535.chunk.js.map",
     "runtime-main.js": "/landing-page-creator/static/js/runtime-main.dad7fd9b.js",
     "runtime-main.js.map": "/landing-page-creator/static/js/runtime-main.dad7fd9b.js.map",
-    "static/js/2.bfc182c2.chunk.js": "/landing-page-creator/static/js/2.bfc182c2.chunk.js",
-    "static/js/2.bfc182c2.chunk.js.map": "/landing-page-creator/static/js/2.bfc182c2.chunk.js.map",
+    "static/js/2.6f702190.chunk.js": "/landing-page-creator/static/js/2.6f702190.chunk.js",
+    "static/js/2.6f702190.chunk.js.map": "/landing-page-creator/static/js/2.6f702190.chunk.js.map",
     "index.html": "/landing-page-creator/index.html",
-    "precache-manifest.acb991c80aabcaf25c27aaa31eb1a4a5.js": "/landing-page-creator/precache-manifest.acb991c80aabcaf25c27aaa31eb1a4a5.js",
+    "precache-manifest.fdb030f10472c6981cfa4bf84331641d.js": "/landing-page-creator/precache-manifest.fdb030f10472c6981cfa4bf84331641d.js",
     "service-worker.js": "/landing-page-creator/service-worker.js"
   },
   "entrypoints": [
     "static/js/runtime-main.dad7fd9b.js",
-    "static/js/2.bfc182c2.chunk.js",
-    "static/js/main.fb6fed8a.chunk.js"
+    "static/js/2.6f702190.chunk.js",
+    "static/js/main.03d24535.chunk.js"
   ]
 }
